@@ -1,0 +1,33 @@
+{% include meta.html %}
+
+<body>
+
+	{% include header.html %}
+		
+		<section id="content">
+			<h3><a href="{{ page.url }}" title="">{{ page.title }}</a></h3>
+			{{ content }}
+			
+			<h4>Categoria: {{ page.categories }}</h4>
+			<h4>Tags: {{ page.tags }}</h4>
+			
+			<div id="pagination">
+				{% if page.prev_section != null %}
+					<a href="{{ site.url }}/produtos/{{ page.prev_section }}" class="prev">Back</a>
+				{% else %}
+					<span class="prev disabled">Back</span>
+				{% endif %}
+					
+				{% if page.next_section != null %}
+					<a href="{{ site.url }}/produtos/{{ page.next_section }}" class="next">Next</a>
+				{% else %}
+					<span class="next disabled">Next</span>
+				{% endif %}
+			</div> <!-- /pagination -->
+			
+		</section>
+
+	{% include footer.html %}
+
+</body>
+</html>
