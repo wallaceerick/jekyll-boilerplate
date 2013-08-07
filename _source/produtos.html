@@ -1,0 +1,19 @@
+---
+layout: default
+title: Jekyll Boilerplate | Produtos
+produtos: true
+---
+
+<section id="content">
+    <h2>Product List</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    
+</section>
