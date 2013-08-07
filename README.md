@@ -1,2 +1,2 @@
-jekyll-boilerplate
+Jekyll Boilerplate
 ==================
