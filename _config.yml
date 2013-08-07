@@ -1,4 +1,4 @@
-permalink: 		/produtos/:categories/:title/
-paginate: 		2
-source:      	_source
-destination: 	_build
+permalink: /produtos/:categories/:title/
+paginate: 2
+source: _source
+destination: _build
