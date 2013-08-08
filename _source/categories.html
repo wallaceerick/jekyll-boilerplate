@@ -1,0 +1,14 @@
+---
+layout: default
+title: Categories
+categories: true
+---
+
+<section id="content">
+    <h2>Categories List</h2>
+    <ul>
+        {% for cat in site.categories %}
+        <li>{{ cat[0] }}</li>
+        {% endfor %}
+    </ul>
+</section>
