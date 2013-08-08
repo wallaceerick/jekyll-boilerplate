@@ -7,6 +7,7 @@
             <li {% if page.home %}class="current"{% endif %}><a href="{{ site.url }}/">Home</a></li>
             <li {% if page.produtos or site.posts %}class="current"{% endif %}><a href="{{ site.url }}/produtos.html">Produtos</a></li>
             <li {% if page.categories %}class="current"{% endif %}><a href="{{ site.url }}/categories.html">Categories</a></li>
+            <li {% if page.tags %}class="current"{% endif %}><a href="{{ site.url }}/tags.html">Tags</a></li>
             <!-- <li {% if page.produtos or page.category == "Philco" %}class="current"{% endif %}><a href="{{ site.url }}/produtos.html">Produtos</a></li>-->
         </ul>
     </nav>
