@@ -1,13 +1,24 @@
+#Author Information
+title: Jekyll Boilerplate
+tagline: My personal tool to start projects with Jekyll.
+author:
+	name: Wallace Erick
+	email: wallace_erick@hotmail.com
+	github: wallaceerick
+	version: 0.0.1
+
+#Folder
 source: _source
 destination: _build
 
-server: true
-
-permalink: /produtos/:categories/:title/
-paginate_path: "produtos/pagina:num"
-paginate: 5
-
+#Server
 host:        localhost
 port:        4000
 baseurl:     / 
 url:         http://localhost:4000
+server: true
+
+#Other
+permalink: /produtos/:categories/:title/
+paginate_path: "produtos/pagina:num"
+paginate: 5
