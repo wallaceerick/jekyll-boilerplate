@@ -5,11 +5,14 @@
 	{% include header.html %}
 		
 		<section id="content">
-			<h3><a href="{{ page.url }}" title="">{{ page.title }}</a></h3>
+			<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+			<img src="{{ site.url }}/assets/images/{{ page.image }}" alt="{{ page.title }}" /> 
+			<h4>
+				<strong>Categoria:</strong> {{ page.categories }} <br />
+				<strong>Tags:</strong> {{ page.tags }}
+			</h4>
+
 			{{ content }}
-			
-			<h4>Categoria: {{ page.categories }}</h4>
-			<h4>Tags: {{ page.tags }}</h4>
 			
 			<div id="pagination">
 				{% if page.prev_section != null %}

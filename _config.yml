@@ -1,11 +1,13 @@
 source: _source
 destination: _build
 
+server: true
+
 permalink: /produtos/:categories/:title/
 paginate_path: "produtos/pagina:num"
 paginate: 5
 
-host:        http://localhost
+host:        localhost
 port:        4000
-baseurl:     /
+baseurl:     / 
 url:         http://localhost:4000
